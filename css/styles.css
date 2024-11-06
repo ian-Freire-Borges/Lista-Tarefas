@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+ html{
+    height: 100vh;
+} 
+
+body{
+    background-image: url("../img/pexels-pixabay-531880.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button{
+    background-color: #fdfdfd;
+    color: #7a7676;;
+    border: 2px solid #7a7676fd;;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #7a7676fd;
+    color: #fff;
+}
+
+.fav-btn:hover i{
+    color: rgba(255, 0, 0, 0.704);
+}
+
+button:hover > i{
+    color: #fff;
+}
+.remove-todo:hover >i{
+    color: rgb(255, 2, 2);
+}
+
+.finish-todo:hover >i{
+    color: green;
+}
+
+.edit-todo:hover >i{
+    color: yellow;
+}
+
+.remove-todo i{
+    color: rgba(255, 0, 0, 0.652);
+}
+
+.edit-todo i{
+    color: rgba(255, 255, 0, 0.723);
+}
+
+.finish-todo i{
+    color: rgba(0, 128, 0, 0.649);
+}
+
+.fav-btn i{
+    color: rgba(248, 0, 0, 0.148);
+}
+
+button i{
+    font-weight: bolder;
+    pointer-events: none;
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.all-container{
+    max-width: 450px;
+    margin: 2rem auto ;
+    background-color: #f9f9fad5;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+#main-tittle{
+    position: relative;
+    top:1rem;
+    font-weight: bolder;
+}
+.all-container header{
+    text-align: center;
+    padding: 1.5rem 1rem 2rem;
+    border-bottom: 1px solid #7a7676;
+}
+
+#all-form, 
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #7a7676;
+}
+
+#all-form p, 
+#edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+#toolbar{
+    padding: 1rem ;
+    border-bottom: 1px solid #7a7676;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #7a7676;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3;
+}
+ 
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.fav-btn{
+    margin-right: 1.5rem;
+}
+
+.done{
+    background-color: #a19c9caa;
+}
+
+.done h3{
+    color: #474558;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.fav i{
+    color: red;
+}
+
